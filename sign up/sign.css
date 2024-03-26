@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body{
+    background-color: #f5f5f57e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    margin: 30px auto;
+}
+
+.card-1{
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 40px;
+}
+
+.card-1 img{
+    object-fit: cover;
+    width: 220px;
+    height: 60px;
+    margin: 30px auto 5px;
+}
+
+.card-1 .text{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #7e7e7e;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+
+.card-1 .facebook{
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #2997d3;
+    width: 100%;
+    height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-1 .facebook i{
+    font-size: 20px;
+}
+
+.card-1 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1 form input{
+    height: 35px;
+    margin: 3px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f598;
+    border-radius: 2px;
+    padding: 0 8px;
+    outline: none;
+}
+
+.card-1 form input:focus{
+    border: 1.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.card-1 form input::placeholder{
+    font-size: 12px;
+}
+
+.card-1 form .btn{
+    background-color: #00b4d8;
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.card-1 p:nth-of-type(2){
+    margin: 20px auto 40px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(145, 145, 145);
+}
+
+.card-1 p:nth-of-type(2) a{
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+}
+
+.hr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0 30px;
+}
+
+.hr h5{
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: 600;
+    transform: translatey(9px);
+    background-color: white;
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-2{
+    height: 9.5vh;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-2 p{
+    font-size: 14px;
+}
+
+.card-2 p a{
+    text-decoration: none;
+    color: #17a9c3;
+    font-size: 14.5px;
+}
+
+
+.card-3{
+    height: 15vh;
+    width: 350px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-3 span{
+    font-size: 14.2px;
+}
+
+.card-3 .imgs img{
+    width: 140px;
+}
+
+.phone{
+    height: 95vh;
+    width: 300px;
+    position: relative;
+}
+
+.phone img{
+    object-fit: cover;
+    height: 95vh;
+    width: 300px;
+    position: absolute;
+}
+
+.phone img:nth-of-type(1){
+    transform: translate(-70px, -14px);
+}
+
+@media (max-width: 444px){
+    .card{
+        margin: 0 auto;
+    }
+    .card-1, .card-2{
+        border: none;
+        background: none;
+    }
+}
